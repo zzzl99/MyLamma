@@ -63,6 +63,8 @@ CMAKE_BINARY_DIR = /home/lz/MyLLama/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/llama.dir/all
+all: CMakeFiles/llama_infer.dir/all
 all: test/all
 .PHONY : all
 
@@ -71,6 +73,8 @@ preinstall: test/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/llama.dir/clean
+clean: CMakeFiles/llama_infer.dir/clean
 clean: test/clean
 .PHONY : clean
 
@@ -90,18 +94,70 @@ test/clean: test/CMakeFiles/test_llm.dir/clean
 .PHONY : test/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/llama.dir
+
+# All Build rule for target.
+CMakeFiles/llama.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lz/MyLLama/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target llama"
+.PHONY : CMakeFiles/llama.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/llama.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lz/MyLLama/cmake-build-debug/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/llama.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lz/MyLLama/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/llama.dir/rule
+
+# Convenience name for target.
+llama: CMakeFiles/llama.dir/rule
+.PHONY : llama
+
+# clean rule for target.
+CMakeFiles/llama.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/clean
+.PHONY : CMakeFiles/llama.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/llama_infer.dir
+
+# All Build rule for target.
+CMakeFiles/llama_infer.dir/all: CMakeFiles/llama.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama_infer.dir/build.make CMakeFiles/llama_infer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama_infer.dir/build.make CMakeFiles/llama_infer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lz/MyLLama/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target llama_infer"
+.PHONY : CMakeFiles/llama_infer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/llama_infer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lz/MyLLama/cmake-build-debug/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/llama_infer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lz/MyLLama/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/llama_infer.dir/rule
+
+# Convenience name for target.
+llama_infer: CMakeFiles/llama_infer.dir/rule
+.PHONY : llama_infer
+
+# clean rule for target.
+CMakeFiles/llama_infer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama_infer.dir/build.make CMakeFiles/llama_infer.dir/clean
+.PHONY : CMakeFiles/llama_infer.dir/clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/test_llm.dir
 
 # All Build rule for target.
-test/CMakeFiles/test_llm.dir/all:
+test/CMakeFiles/test_llm.dir/all: CMakeFiles/llama.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_llm.dir/build.make test/CMakeFiles/test_llm.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_llm.dir/build.make test/CMakeFiles/test_llm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lz/MyLLama/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target test_llm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lz/MyLLama/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target test_llm"
 .PHONY : test/CMakeFiles/test_llm.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_llm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lz/MyLLama/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lz/MyLLama/cmake-build-debug/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_llm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lz/MyLLama/cmake-build-debug/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_llm.dir/rule

@@ -17,6 +17,102 @@
 					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="llama">
+				<Option output="/home/lz/MyLLama/lib/libllama.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lz/MyLLama/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLOG_USE_GLOG_EXPORT"/>
+					<Add directory="/home/lz/MyLLama/kuiper/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 llama"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llama/fast">
+				<Option output="/home/lz/MyLLama/lib/libllama.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lz/MyLLama/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLOG_USE_GLOG_EXPORT"/>
+					<Add directory="/home/lz/MyLLama/kuiper/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 llama/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llama_infer">
+				<Option output="/home/lz/MyLLama/cmake-build-debug/llama_infer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLOG_USE_GLOG_EXPORT"/>
+					<Add directory="/home/lz/MyLLama/kuiper/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 llama_infer"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llama_infer/fast">
+				<Option output="/home/lz/MyLLama/cmake-build-debug/llama_infer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLOG_USE_GLOG_EXPORT"/>
+					<Add directory="/home/lz/MyLLama/kuiper/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 llama_infer/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/lz/MyLLama/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/lz/MyLLama/cmake-build-debug"/>
 				<Option type="4"/>
@@ -45,6 +141,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLOG_USE_GLOG_EXPORT"/>
+					<Add directory="/home/lz/MyLLama/test/../kuiper/include"/>
+					<Add directory="/home/lz/MyLLama/kuiper/include"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -68,6 +166,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLOG_USE_GLOG_EXPORT"/>
+					<Add directory="/home/lz/MyLLama/test/../kuiper/include"/>
+					<Add directory="/home/lz/MyLLama/kuiper/include"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -84,7 +184,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/lz/MyLLama/test/test_math.cpp">
+		<Unit filename="/home/lz/MyLLama/kuiper/include/op/layer.cpp">
+			<Option target="llama"/>
+		</Unit>
+		<Unit filename="/home/lz/MyLLama/kuiper/include/op/layer.h">
+			<Option target="llama"/>
+		</Unit>
+		<Unit filename="/home/lz/MyLLama/kuiper/include/tensor/tensor.h">
+			<Option target="llama"/>
+		</Unit>
+		<Unit filename="/home/lz/MyLLama/kuiper/source/base/alloc_cpu.cpp">
+			<Option target="llama"/>
+		</Unit>
+		<Unit filename="/home/lz/MyLLama/kuiper/source/base/base.cpp">
+			<Option target="llama"/>
+		</Unit>
+		<Unit filename="/home/lz/MyLLama/kuiper/source/base/buffer.cpp">
+			<Option target="llama"/>
+		</Unit>
+		<Unit filename="/home/lz/MyLLama/kuiper/source/tensor/tensor.cpp">
+			<Option target="llama"/>
+		</Unit>
+		<Unit filename="/home/lz/MyLLama/main.cpp">
+			<Option target="llama_infer"/>
+		</Unit>
+		<Unit filename="/home/lz/MyLLama/test/test_tensor.cpp">
 			<Option target="test_llm"/>
 		</Unit>
 		<Unit filename="/home/lz/MyLLama/CMakeLists.txt">

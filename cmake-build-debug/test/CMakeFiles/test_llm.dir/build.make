@@ -69,31 +69,33 @@ include test/CMakeFiles/test_llm.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/CMakeFiles/test_llm.dir/flags.make
 
-test/CMakeFiles/test_llm.dir/test_math.cpp.o: test/CMakeFiles/test_llm.dir/flags.make
-test/CMakeFiles/test_llm.dir/test_math.cpp.o: ../test/test_math.cpp
-test/CMakeFiles/test_llm.dir/test_math.cpp.o: test/CMakeFiles/test_llm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lz/MyLLama/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test_llm.dir/test_math.cpp.o"
-	cd /home/lz/MyLLama/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_llm.dir/test_math.cpp.o -MF CMakeFiles/test_llm.dir/test_math.cpp.o.d -o CMakeFiles/test_llm.dir/test_math.cpp.o -c /home/lz/MyLLama/test/test_math.cpp
+test/CMakeFiles/test_llm.dir/test_tensor.cpp.o: test/CMakeFiles/test_llm.dir/flags.make
+test/CMakeFiles/test_llm.dir/test_tensor.cpp.o: ../test/test_tensor.cpp
+test/CMakeFiles/test_llm.dir/test_tensor.cpp.o: test/CMakeFiles/test_llm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lz/MyLLama/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test_llm.dir/test_tensor.cpp.o"
+	cd /home/lz/MyLLama/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/test_llm.dir/test_tensor.cpp.o -MF CMakeFiles/test_llm.dir/test_tensor.cpp.o.d -o CMakeFiles/test_llm.dir/test_tensor.cpp.o -c /home/lz/MyLLama/test/test_tensor.cpp
 
-test/CMakeFiles/test_llm.dir/test_math.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_llm.dir/test_math.cpp.i"
-	cd /home/lz/MyLLama/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lz/MyLLama/test/test_math.cpp > CMakeFiles/test_llm.dir/test_math.cpp.i
+test/CMakeFiles/test_llm.dir/test_tensor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_llm.dir/test_tensor.cpp.i"
+	cd /home/lz/MyLLama/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lz/MyLLama/test/test_tensor.cpp > CMakeFiles/test_llm.dir/test_tensor.cpp.i
 
-test/CMakeFiles/test_llm.dir/test_math.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_llm.dir/test_math.cpp.s"
-	cd /home/lz/MyLLama/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lz/MyLLama/test/test_math.cpp -o CMakeFiles/test_llm.dir/test_math.cpp.s
+test/CMakeFiles/test_llm.dir/test_tensor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_llm.dir/test_tensor.cpp.s"
+	cd /home/lz/MyLLama/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lz/MyLLama/test/test_tensor.cpp -o CMakeFiles/test_llm.dir/test_tensor.cpp.s
 
 # Object files for target test_llm
 test_llm_OBJECTS = \
-"CMakeFiles/test_llm.dir/test_math.cpp.o"
+"CMakeFiles/test_llm.dir/test_tensor.cpp.o"
 
 # External object files for target test_llm
 test_llm_EXTERNAL_OBJECTS =
 
-test/test_llm: test/CMakeFiles/test_llm.dir/test_math.cpp.o
+test/test_llm: test/CMakeFiles/test_llm.dir/test_tensor.cpp.o
 test/test_llm: test/CMakeFiles/test_llm.dir/build.make
-test/test_llm: /usr/local/lib/libglog.so.0.8.0
 test/test_llm: /usr/local/lib/libgtest.a
+test/test_llm: ../lib/libllama.so
+test/test_llm: /usr/local/lib/libglog.so.0.8.0
+test/test_llm: /usr/lib/x86_64-linux-gnu/libarmadillo.so
 test/test_llm: test/CMakeFiles/test_llm.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lz/MyLLama/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_llm"
 	cd /home/lz/MyLLama/cmake-build-debug/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_llm.dir/link.txt --verbose=$(VERBOSE)

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DGLOG_USE_GLOG_EXPORT
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/lz/MyLLama/test/../kuiper/include -I/home/lz/MyLLama/kuiper/include
 
-CXX_FLAGS = -g
+CXX_FLAGS = -g -std=gnu++20
 

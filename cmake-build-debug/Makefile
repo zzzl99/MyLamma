@@ -117,6 +117,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named llama
+
+# Build rule for target.
+llama: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 llama
+.PHONY : llama
+
+# fast build rule for target.
+llama/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/build
+.PHONY : llama/fast
+
+#=============================================================================
+# Target rules for targets named llama_infer
+
+# Build rule for target.
+llama_infer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 llama_infer
+.PHONY : llama_infer
+
+# fast build rule for target.
+llama_infer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama_infer.dir/build.make CMakeFiles/llama_infer.dir/build
+.PHONY : llama_infer/fast
+
+#=============================================================================
 # Target rules for targets named test_llm
 
 # Build rule for target.
@@ -129,6 +155,150 @@ test_llm/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_llm.dir/build.make test/CMakeFiles/test_llm.dir/build
 .PHONY : test_llm/fast
 
+kuiper/include/op/layer.o: kuiper/include/op/layer.cpp.o
+.PHONY : kuiper/include/op/layer.o
+
+# target to build an object file
+kuiper/include/op/layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/include/op/layer.cpp.o
+.PHONY : kuiper/include/op/layer.cpp.o
+
+kuiper/include/op/layer.i: kuiper/include/op/layer.cpp.i
+.PHONY : kuiper/include/op/layer.i
+
+# target to preprocess a source file
+kuiper/include/op/layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/include/op/layer.cpp.i
+.PHONY : kuiper/include/op/layer.cpp.i
+
+kuiper/include/op/layer.s: kuiper/include/op/layer.cpp.s
+.PHONY : kuiper/include/op/layer.s
+
+# target to generate assembly for a file
+kuiper/include/op/layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/include/op/layer.cpp.s
+.PHONY : kuiper/include/op/layer.cpp.s
+
+kuiper/source/base/alloc_cpu.o: kuiper/source/base/alloc_cpu.cpp.o
+.PHONY : kuiper/source/base/alloc_cpu.o
+
+# target to build an object file
+kuiper/source/base/alloc_cpu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/base/alloc_cpu.cpp.o
+.PHONY : kuiper/source/base/alloc_cpu.cpp.o
+
+kuiper/source/base/alloc_cpu.i: kuiper/source/base/alloc_cpu.cpp.i
+.PHONY : kuiper/source/base/alloc_cpu.i
+
+# target to preprocess a source file
+kuiper/source/base/alloc_cpu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/base/alloc_cpu.cpp.i
+.PHONY : kuiper/source/base/alloc_cpu.cpp.i
+
+kuiper/source/base/alloc_cpu.s: kuiper/source/base/alloc_cpu.cpp.s
+.PHONY : kuiper/source/base/alloc_cpu.s
+
+# target to generate assembly for a file
+kuiper/source/base/alloc_cpu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/base/alloc_cpu.cpp.s
+.PHONY : kuiper/source/base/alloc_cpu.cpp.s
+
+kuiper/source/base/base.o: kuiper/source/base/base.cpp.o
+.PHONY : kuiper/source/base/base.o
+
+# target to build an object file
+kuiper/source/base/base.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/base/base.cpp.o
+.PHONY : kuiper/source/base/base.cpp.o
+
+kuiper/source/base/base.i: kuiper/source/base/base.cpp.i
+.PHONY : kuiper/source/base/base.i
+
+# target to preprocess a source file
+kuiper/source/base/base.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/base/base.cpp.i
+.PHONY : kuiper/source/base/base.cpp.i
+
+kuiper/source/base/base.s: kuiper/source/base/base.cpp.s
+.PHONY : kuiper/source/base/base.s
+
+# target to generate assembly for a file
+kuiper/source/base/base.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/base/base.cpp.s
+.PHONY : kuiper/source/base/base.cpp.s
+
+kuiper/source/base/buffer.o: kuiper/source/base/buffer.cpp.o
+.PHONY : kuiper/source/base/buffer.o
+
+# target to build an object file
+kuiper/source/base/buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/base/buffer.cpp.o
+.PHONY : kuiper/source/base/buffer.cpp.o
+
+kuiper/source/base/buffer.i: kuiper/source/base/buffer.cpp.i
+.PHONY : kuiper/source/base/buffer.i
+
+# target to preprocess a source file
+kuiper/source/base/buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/base/buffer.cpp.i
+.PHONY : kuiper/source/base/buffer.cpp.i
+
+kuiper/source/base/buffer.s: kuiper/source/base/buffer.cpp.s
+.PHONY : kuiper/source/base/buffer.s
+
+# target to generate assembly for a file
+kuiper/source/base/buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/base/buffer.cpp.s
+.PHONY : kuiper/source/base/buffer.cpp.s
+
+kuiper/source/tensor/tensor.o: kuiper/source/tensor/tensor.cpp.o
+.PHONY : kuiper/source/tensor/tensor.o
+
+# target to build an object file
+kuiper/source/tensor/tensor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/tensor/tensor.cpp.o
+.PHONY : kuiper/source/tensor/tensor.cpp.o
+
+kuiper/source/tensor/tensor.i: kuiper/source/tensor/tensor.cpp.i
+.PHONY : kuiper/source/tensor/tensor.i
+
+# target to preprocess a source file
+kuiper/source/tensor/tensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/tensor/tensor.cpp.i
+.PHONY : kuiper/source/tensor/tensor.cpp.i
+
+kuiper/source/tensor/tensor.s: kuiper/source/tensor/tensor.cpp.s
+.PHONY : kuiper/source/tensor/tensor.s
+
+# target to generate assembly for a file
+kuiper/source/tensor/tensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/tensor/tensor.cpp.s
+.PHONY : kuiper/source/tensor/tensor.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama_infer.dir/build.make CMakeFiles/llama_infer.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama_infer.dir/build.make CMakeFiles/llama_infer.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama_infer.dir/build.make CMakeFiles/llama_infer.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -137,7 +307,27 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... llama"
+	@echo "... llama_infer"
 	@echo "... test_llm"
+	@echo "... kuiper/include/op/layer.o"
+	@echo "... kuiper/include/op/layer.i"
+	@echo "... kuiper/include/op/layer.s"
+	@echo "... kuiper/source/base/alloc_cpu.o"
+	@echo "... kuiper/source/base/alloc_cpu.i"
+	@echo "... kuiper/source/base/alloc_cpu.s"
+	@echo "... kuiper/source/base/base.o"
+	@echo "... kuiper/source/base/base.i"
+	@echo "... kuiper/source/base/base.s"
+	@echo "... kuiper/source/base/buffer.o"
+	@echo "... kuiper/source/base/buffer.i"
+	@echo "... kuiper/source/base/buffer.s"
+	@echo "... kuiper/source/tensor/tensor.o"
+	@echo "... kuiper/source/tensor/tensor.i"
+	@echo "... kuiper/source/tensor/tensor.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

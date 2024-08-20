@@ -130,29 +130,29 @@ test_llm/fast:
 	cd /home/lz/MyLLama/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_llm.dir/build.make test/CMakeFiles/test_llm.dir/build
 .PHONY : test_llm/fast
 
-test_math.o: test_math.cpp.o
-.PHONY : test_math.o
+test_tensor.o: test_tensor.cpp.o
+.PHONY : test_tensor.o
 
 # target to build an object file
-test_math.cpp.o:
-	cd /home/lz/MyLLama/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_llm.dir/build.make test/CMakeFiles/test_llm.dir/test_math.cpp.o
-.PHONY : test_math.cpp.o
+test_tensor.cpp.o:
+	cd /home/lz/MyLLama/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_llm.dir/build.make test/CMakeFiles/test_llm.dir/test_tensor.cpp.o
+.PHONY : test_tensor.cpp.o
 
-test_math.i: test_math.cpp.i
-.PHONY : test_math.i
+test_tensor.i: test_tensor.cpp.i
+.PHONY : test_tensor.i
 
 # target to preprocess a source file
-test_math.cpp.i:
-	cd /home/lz/MyLLama/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_llm.dir/build.make test/CMakeFiles/test_llm.dir/test_math.cpp.i
-.PHONY : test_math.cpp.i
+test_tensor.cpp.i:
+	cd /home/lz/MyLLama/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_llm.dir/build.make test/CMakeFiles/test_llm.dir/test_tensor.cpp.i
+.PHONY : test_tensor.cpp.i
 
-test_math.s: test_math.cpp.s
-.PHONY : test_math.s
+test_tensor.s: test_tensor.cpp.s
+.PHONY : test_tensor.s
 
 # target to generate assembly for a file
-test_math.cpp.s:
-	cd /home/lz/MyLLama/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_llm.dir/build.make test/CMakeFiles/test_llm.dir/test_math.cpp.s
-.PHONY : test_math.cpp.s
+test_tensor.cpp.s:
+	cd /home/lz/MyLLama/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_llm.dir/build.make test/CMakeFiles/test_llm.dir/test_tensor.cpp.s
+.PHONY : test_tensor.cpp.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_llm"
-	@echo "... test_math.o"
-	@echo "... test_math.i"
-	@echo "... test_math.s"
+	@echo "... test_tensor.o"
+	@echo "... test_tensor.i"
+	@echo "... test_tensor.s"
 .PHONY : help
 
 

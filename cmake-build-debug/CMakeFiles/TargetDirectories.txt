@@ -1,3 +1,5 @@
+/home/lz/MyLLama/cmake-build-debug/CMakeFiles/llama.dir
+/home/lz/MyLLama/cmake-build-debug/CMakeFiles/llama_infer.dir
 /home/lz/MyLLama/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/lz/MyLLama/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/lz/MyLLama/cmake-build-debug/test/CMakeFiles/test_llm.dir

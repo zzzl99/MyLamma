@@ -68,5 +68,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/llama.dir/DependInfo.cmake"
+  "CMakeFiles/llama_infer.dir/DependInfo.cmake"
   "test/CMakeFiles/test_llm.dir/DependInfo.cmake"
   )
