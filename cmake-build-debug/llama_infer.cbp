@@ -184,9 +184,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/lz/MyLLama/kuiper/include/op/layer.cpp">
-			<Option target="llama"/>
-		</Unit>
 		<Unit filename="/home/lz/MyLLama/kuiper/include/op/layer.h">
 			<Option target="llama"/>
 		</Unit>
@@ -200,6 +197,9 @@
 			<Option target="llama"/>
 		</Unit>
 		<Unit filename="/home/lz/MyLLama/kuiper/source/base/buffer.cpp">
+			<Option target="llama"/>
+		</Unit>
+		<Unit filename="/home/lz/MyLLama/kuiper/source/op/layer.cpp">
 			<Option target="llama"/>
 		</Unit>
 		<Unit filename="/home/lz/MyLLama/kuiper/source/tensor/tensor.cpp">

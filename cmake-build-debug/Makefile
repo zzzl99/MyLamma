@@ -155,30 +155,6 @@ test_llm/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_llm.dir/build.make test/CMakeFiles/test_llm.dir/build
 .PHONY : test_llm/fast
 
-kuiper/include/op/layer.o: kuiper/include/op/layer.cpp.o
-.PHONY : kuiper/include/op/layer.o
-
-# target to build an object file
-kuiper/include/op/layer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/include/op/layer.cpp.o
-.PHONY : kuiper/include/op/layer.cpp.o
-
-kuiper/include/op/layer.i: kuiper/include/op/layer.cpp.i
-.PHONY : kuiper/include/op/layer.i
-
-# target to preprocess a source file
-kuiper/include/op/layer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/include/op/layer.cpp.i
-.PHONY : kuiper/include/op/layer.cpp.i
-
-kuiper/include/op/layer.s: kuiper/include/op/layer.cpp.s
-.PHONY : kuiper/include/op/layer.s
-
-# target to generate assembly for a file
-kuiper/include/op/layer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/include/op/layer.cpp.s
-.PHONY : kuiper/include/op/layer.cpp.s
-
 kuiper/source/base/alloc_cpu.o: kuiper/source/base/alloc_cpu.cpp.o
 .PHONY : kuiper/source/base/alloc_cpu.o
 
@@ -251,6 +227,30 @@ kuiper/source/base/buffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/base/buffer.cpp.s
 .PHONY : kuiper/source/base/buffer.cpp.s
 
+kuiper/source/op/layer.o: kuiper/source/op/layer.cpp.o
+.PHONY : kuiper/source/op/layer.o
+
+# target to build an object file
+kuiper/source/op/layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/op/layer.cpp.o
+.PHONY : kuiper/source/op/layer.cpp.o
+
+kuiper/source/op/layer.i: kuiper/source/op/layer.cpp.i
+.PHONY : kuiper/source/op/layer.i
+
+# target to preprocess a source file
+kuiper/source/op/layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/op/layer.cpp.i
+.PHONY : kuiper/source/op/layer.cpp.i
+
+kuiper/source/op/layer.s: kuiper/source/op/layer.cpp.s
+.PHONY : kuiper/source/op/layer.s
+
+# target to generate assembly for a file
+kuiper/source/op/layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/llama.dir/build.make CMakeFiles/llama.dir/kuiper/source/op/layer.cpp.s
+.PHONY : kuiper/source/op/layer.cpp.s
+
 kuiper/source/tensor/tensor.o: kuiper/source/tensor/tensor.cpp.o
 .PHONY : kuiper/source/tensor/tensor.o
 
@@ -310,9 +310,6 @@ help:
 	@echo "... llama"
 	@echo "... llama_infer"
 	@echo "... test_llm"
-	@echo "... kuiper/include/op/layer.o"
-	@echo "... kuiper/include/op/layer.i"
-	@echo "... kuiper/include/op/layer.s"
 	@echo "... kuiper/source/base/alloc_cpu.o"
 	@echo "... kuiper/source/base/alloc_cpu.i"
 	@echo "... kuiper/source/base/alloc_cpu.s"
@@ -322,6 +319,9 @@ help:
 	@echo "... kuiper/source/base/buffer.o"
 	@echo "... kuiper/source/base/buffer.i"
 	@echo "... kuiper/source/base/buffer.s"
+	@echo "... kuiper/source/op/layer.o"
+	@echo "... kuiper/source/op/layer.i"
+	@echo "... kuiper/source/op/layer.s"
 	@echo "... kuiper/source/tensor/tensor.o"
 	@echo "... kuiper/source/tensor/tensor.i"
 	@echo "... kuiper/source/tensor/tensor.s"
